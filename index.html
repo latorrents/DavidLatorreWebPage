@@ -1,56 +1,46 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title>Latorredev</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="David Latorre — Cloud Engineer & DevSecOps. Follow the white rabbit." />
+		<meta name="theme-color" content="#000000" />
 		<link rel="icon" type="image/png" href="assets/favicon.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>document.documentElement.classList.add('js');</script>
 	</head>
 	<body>
-		<div>
-			<div id="bg"></div> 
-			<div"></div>
-			<div id="main">
+		<canvas id="rain" aria-hidden="true"></canvas>
+		<div class="crt" aria-hidden="true"></div>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Latorredev</h1>
-						<p>Hi, I'm David Latorre</p>
-						<p>I'm a Cloud Engineer and DevSecOps strongly interested in FOSS development specialized in GNU/Linux, AWS, Docker, Kubernetes, Jenkins, Gitlab, GitHub, CI/CD pipelines, Bash, Python and Golang.</p>
-						<h2>Follow The white rabbit</h2>
-						<img src="assets/rabbit-ascii.png" alt="white rabbit">
+		<main id="main">
+			<header id="header">
+				<h1 data-scramble>Latorredev<span class="cursor" aria-hidden="true">_</span></h1>
+				<p data-scramble>Hi, I'm David Latorre</p>
+				<p data-scramble>I'm a Cloud Engineer and DevSecOps strongly interested in FOSS development specialized in GNU/Linux, AWS, Docker, Kubernetes, Jenkins, Gitlab, GitHub, CI/CD pipelines, Bash, Python and Golang.</p>
+				<h2 data-scramble>Follow the white rabbit</h2>
+			</header>
 
+			<figure class="rabbit">
+				<canvas id="rabbit" role="img" aria-label="ASCII art of a white rabbit"></canvas>
+			</figure>
 
-						<nav>
-							<ul>
-								<li><a href="https://github.com/latorredev" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://linkedin.com/in/latorredev" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://blog.latorredev.com" target="_blank" class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
-								<li><a href="https://x.com/latorredev90" target="_blank" class="icon brands fa-twitter"><span class="label">X</span></a></li>
-							</ul>
-						</nav>
-						<p>Feel free to reach out to me through any of the platforms above or <a href="mailto:david@latorredev.com">email me</a> at david@latorredev.com</p>
-					</header>
+			<nav class="links">
+				<ul>
+					<li><a href="https://github.com/latorredev" target="_blank" rel="noopener" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://linkedin.com/in/latorredev" target="_blank" rel="noopener" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://blog.latorredev.com" target="_blank" rel="noopener" class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
+					<li><a href="https://x.com/latorredev90" target="_blank" rel="noopener" class="icon brands fa-twitter"><span class="label">X</span></a></li>
+				</ul>
+			</nav>
 
-				<!-- Footer
-					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
-				
+			<footer id="footer">
+				<p data-scramble>Feel free to reach out to me through any of the platforms above or <a href="mailto:david@latorredev.com">email me</a> at david@latorredev.com</p>
+			</footer>
+		</main>
 
-			</div>
-		</div>
-		<!-- <script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script> -->
+		<script src="assets/js/rabbit.js"></script>
+		<script src="assets/js/matrix.js"></script>
 	</body>
 </html>
